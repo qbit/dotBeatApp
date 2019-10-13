@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		995ECC5022FE011600A2D705 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9984FC6822F229FB001EFF86 /* NotificationCenter.framework */; };
+		995ECC5322FE011600A2D705 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995ECC5222FE011600A2D705 /* TodayViewController.swift */; };
+		995ECC5622FE011600A2D705 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995ECC5422FE011600A2D705 /* MainInterface.storyboard */; };
+		995ECC5A22FE011600A2D705 /* dotBeatApp Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 995ECC4F22FE011600A2D705 /* dotBeatApp Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		996087CD2305B27A00FD704D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996087CC2305B27A00FD704D /* InterfaceController.swift */; };
 		9984FC1022F22987001EFF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984FC0F22F22987001EFF86 /* AppDelegate.swift */; };
 		9984FC1222F22987001EFF86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984FC1122F22987001EFF86 /* SceneDelegate.swift */; };
 		9984FC1422F22987001EFF86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984FC1322F22987001EFF86 /* ContentView.swift */; };
@@ -26,9 +31,20 @@
 		9984FC4A22F2298A001EFF86 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984FC4922F2298A001EFF86 /* ComplicationController.swift */; };
 		9984FC4C22F2298A001EFF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9984FC4B22F2298A001EFF86 /* Assets.xcassets */; };
 		9984FC4F22F2298A001EFF86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9984FC4E22F2298A001EFF86 /* Preview Assets.xcassets */; };
+		999C2B9D22FE0BFC006E6787 /* Beat in Frameworks */ = {isa = PBXBuildFile; productRef = 999C2B9C22FE0BFC006E6787 /* Beat */; };
+		99A62C8822F4D36300FD57D3 /* Beat in Frameworks */ = {isa = PBXBuildFile; productRef = 99A62C8722F4D36300FD57D3 /* Beat */; };
+		99A62CA222F4ED9700FD57D3 /* Beat in Frameworks */ = {isa = PBXBuildFile; productRef = 99A62CA122F4ED9700FD57D3 /* Beat */; };
+		99B6C6922317017D0045FF94 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 99B6C6912317017D0045FF94 /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		995ECC5822FE011600A2D705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9984FC0422F22987001EFF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 995ECC4E22FE011600A2D705;
+			remoteInfo = "dotBeatApp Widget";
+		};
 		9984FC2322F22989001EFF86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9984FC0422F22987001EFF86 /* Project object */;
@@ -75,9 +91,35 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9984FC7722F229FB001EFF86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				995ECC5A22FE011600A2D705 /* dotBeatApp Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B6C66F2316FB850045FF94 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		995ECC4F22FE011600A2D705 /* dotBeatApp Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dotBeatApp Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		995ECC5222FE011600A2D705 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		995ECC5522FE011600A2D705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		995ECC5722FE011600A2D705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996087CC2305B27A00FD704D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		9984FC0C22F22987001EFF86 /* dotBeatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dotBeatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9984FC0F22F22987001EFF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9984FC1122F22987001EFF86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,13 +146,25 @@
 		9984FC4E22F2298A001EFF86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9984FC5022F2298A001EFF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9984FC5122F2298A001EFF86 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9984FC6822F229FB001EFF86 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		99B6C6912317017D0045FF94 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		995ECC4C22FE011600A2D705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999C2B9D22FE0BFC006E6787 /* Beat in Frameworks */,
+				995ECC5022FE011600A2D705 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9984FC0922F22987001EFF86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A62CA222F4ED9700FD57D3 /* Beat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,12 +179,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A62C8822F4D36300FD57D3 /* Beat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		995ECC5122FE011600A2D705 /* dotBeatApp Widget */ = {
+			isa = PBXGroup;
+			children = (
+				995ECC5222FE011600A2D705 /* TodayViewController.swift */,
+				995ECC5422FE011600A2D705 /* MainInterface.storyboard */,
+				995ECC5722FE011600A2D705 /* Info.plist */,
+			);
+			path = "dotBeatApp Widget";
+			sourceTree = "<group>";
+		};
 		9984FC0322F22987001EFF86 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +203,8 @@
 				9984FC2522F22989001EFF86 /* dotBeatAppUITests */,
 				9984FC2F22F22989001EFF86 /* dotBeatApp WatchKit App */,
 				9984FC3E22F2298A001EFF86 /* dotBeatApp WatchKit Extension */,
+				995ECC5122FE011600A2D705 /* dotBeatApp Widget */,
+				9984FC6722F229FB001EFF86 /* Frameworks */,
 				9984FC0D22F22987001EFF86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,6 +216,7 @@
 				9984FC2222F22989001EFF86 /* dotBeatAppUITests.xctest */,
 				9984FC2B22F22989001EFF86 /* dotBeatApp WatchKit App.app */,
 				9984FC3A22F2298A001EFF86 /* dotBeatApp WatchKit Extension.appex */,
+				995ECC4F22FE011600A2D705 /* dotBeatApp Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +231,7 @@
 				9984FC1A22F22989001EFF86 /* LaunchScreen.storyboard */,
 				9984FC1D22F22989001EFF86 /* Info.plist */,
 				9984FC1722F22989001EFF86 /* Preview Content */,
+				99B6C6912317017D0045FF94 /* Intents.intentdefinition */,
 			);
 			path = dotBeatApp;
 			sourceTree = "<group>";
@@ -207,6 +276,7 @@
 				9984FC5022F2298A001EFF86 /* Info.plist */,
 				9984FC5122F2298A001EFF86 /* PushNotificationPayload.apns */,
 				9984FC4D22F2298A001EFF86 /* Preview Content */,
+				996087CC2305B27A00FD704D /* InterfaceController.swift */,
 			);
 			path = "dotBeatApp WatchKit Extension";
 			sourceTree = "<group>";
@@ -219,9 +289,37 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9984FC6722F229FB001EFF86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9984FC6822F229FB001EFF86 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		995ECC4E22FE011600A2D705 /* dotBeatApp Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 995ECC5B22FE011600A2D705 /* Build configuration list for PBXNativeTarget "dotBeatApp Widget" */;
+			buildPhases = (
+				995ECC4B22FE011600A2D705 /* Sources */,
+				995ECC4C22FE011600A2D705 /* Frameworks */,
+				995ECC4D22FE011600A2D705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dotBeatApp Widget";
+			packageProductDependencies = (
+				999C2B9C22FE0BFC006E6787 /* Beat */,
+			);
+			productName = "dotBeatApp Widget";
+			productReference = 995ECC4F22FE011600A2D705 /* dotBeatApp Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9984FC0B22F22987001EFF86 /* dotBeatApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9984FC5C22F2298A001EFF86 /* Build configuration list for PBXNativeTarget "dotBeatApp" */;
@@ -230,13 +328,18 @@
 				9984FC0922F22987001EFF86 /* Frameworks */,
 				9984FC0A22F22987001EFF86 /* Resources */,
 				9984FC5B22F2298A001EFF86 /* Embed Watch Content */,
+				9984FC7722F229FB001EFF86 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9984FC2E22F22989001EFF86 /* PBXTargetDependency */,
+				995ECC5922FE011600A2D705 /* PBXTargetDependency */,
 			);
 			name = dotBeatApp;
+			packageProductDependencies = (
+				99A62CA122F4ED9700FD57D3 /* Beat */,
+			);
 			productName = dotBeatApp;
 			productReference = 9984FC0C22F22987001EFF86 /* dotBeatApp.app */;
 			productType = "com.apple.product-type.application";
@@ -283,12 +386,16 @@
 				9984FC3622F2298A001EFF86 /* Sources */,
 				9984FC3722F2298A001EFF86 /* Frameworks */,
 				9984FC3822F2298A001EFF86 /* Resources */,
+				99B6C66F2316FB850045FF94 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "dotBeatApp WatchKit Extension";
+			packageProductDependencies = (
+				99A62C8722F4D36300FD57D3 /* Beat */,
+			);
 			productName = "dotBeatApp WatchKit Extension";
 			productReference = 9984FC3A22F2298A001EFF86 /* dotBeatApp WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -303,6 +410,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Aaron Bieber";
 				TargetAttributes = {
+					995ECC4E22FE011600A2D705 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					9984FC0B22F22987001EFF86 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -312,6 +422,7 @@
 					};
 					9984FC2A22F22989001EFF86 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					9984FC3922F2298A001EFF86 = {
 						CreatedOnToolsVersion = 11.0;
@@ -327,6 +438,9 @@
 				Base,
 			);
 			mainGroup = 9984FC0322F22987001EFF86;
+			packageReferences = (
+				9984FC8B22F22E97001EFF86 /* XCRemoteSwiftPackageReference "Beat" */,
+			);
 			productRefGroup = 9984FC0D22F22987001EFF86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -335,11 +449,20 @@
 				9984FC2122F22989001EFF86 /* dotBeatAppUITests */,
 				9984FC2A22F22989001EFF86 /* dotBeatApp WatchKit App */,
 				9984FC3922F2298A001EFF86 /* dotBeatApp WatchKit Extension */,
+				995ECC4E22FE011600A2D705 /* dotBeatApp Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		995ECC4D22FE011600A2D705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995ECC5622FE011600A2D705 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9984FC0A22F22987001EFF86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,12 +501,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		995ECC4B22FE011600A2D705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995ECC5322FE011600A2D705 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9984FC0822F22987001EFF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9984FC1022F22987001EFF86 /* AppDelegate.swift in Sources */,
 				9984FC1222F22987001EFF86 /* SceneDelegate.swift in Sources */,
+				99B6C6922317017D0045FF94 /* Intents.intentdefinition in Sources */,
 				9984FC1422F22987001EFF86 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +535,7 @@
 				9984FC4222F2298A001EFF86 /* HostingController.swift in Sources */,
 				9984FC4022F2298A001EFF86 /* ContentView.swift in Sources */,
 				9984FC4622F2298A001EFF86 /* NotificationController.swift in Sources */,
+				996087CD2305B27A00FD704D /* InterfaceController.swift in Sources */,
 				9984FC4422F2298A001EFF86 /* ExtensionDelegate.swift in Sources */,
 				9984FC4822F2298A001EFF86 /* NotificationView.swift in Sources */,
 				9984FC4A22F2298A001EFF86 /* ComplicationController.swift in Sources */,
@@ -412,6 +545,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		995ECC5922FE011600A2D705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 995ECC4E22FE011600A2D705 /* dotBeatApp Widget */;
+			targetProxy = 995ECC5822FE011600A2D705 /* PBXContainerItemProxy */;
+		};
 		9984FC2422F22989001EFF86 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9984FC0B22F22987001EFF86 /* dotBeatApp */;
@@ -430,6 +568,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		995ECC5422FE011600A2D705 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				995ECC5522FE011600A2D705 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9984FC1A22F22989001EFF86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -449,6 +595,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		995ECC5C22FE011600A2D705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZZ8BB7Y4Q;
+				INFOPLIST_FILE = "dotBeatApp Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bolddaemon.com.dotBeatApp.dotBeatApp-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		995ECC5D22FE011600A2D705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9ZZ8BB7Y4Q;
+				INFOPLIST_FILE = "dotBeatApp Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bolddaemon.com.dotBeatApp.dotBeatApp-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9984FC5222F2298A001EFF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -616,14 +800,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZZ8BB7Y4Q;
 				IBSC_MODULE = dotBeatApp_WatchKit_Extension;
 				INFOPLIST_FILE = "dotBeatApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolddaemon.com.dotBeatApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
@@ -635,10 +826,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9ZZ8BB7Y4Q;
 				IBSC_MODULE = dotBeatApp_WatchKit_Extension;
 				INFOPLIST_FILE = "dotBeatApp WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolddaemon.com.dotBeatApp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -652,6 +849,7 @@
 		9984FC5D22F2298A001EFF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "dotBeatApp/Preview\\ Content";
@@ -672,6 +870,7 @@
 		9984FC5E22F2298A001EFF86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "dotBeatApp/Preview\\ Content";
@@ -732,6 +931,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		995ECC5B22FE011600A2D705 /* Build configuration list for PBXNativeTarget "dotBeatApp Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995ECC5C22FE011600A2D705 /* Debug */,
+				995ECC5D22FE011600A2D705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9984FC0722F22987001EFF86 /* Build configuration list for PBXProject "dotBeatApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -778,6 +986,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9984FC8B22F22E97001EFF86 /* XCRemoteSwiftPackageReference "Beat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qbit/Beat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		999C2B9C22FE0BFC006E6787 /* Beat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9984FC8B22F22E97001EFF86 /* XCRemoteSwiftPackageReference "Beat" */;
+			productName = Beat;
+		};
+		99A62C8722F4D36300FD57D3 /* Beat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9984FC8B22F22E97001EFF86 /* XCRemoteSwiftPackageReference "Beat" */;
+			productName = Beat;
+		};
+		99A62CA122F4ED9700FD57D3 /* Beat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9984FC8B22F22E97001EFF86 /* XCRemoteSwiftPackageReference "Beat" */;
+			productName = Beat;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9984FC0422F22987001EFF86 /* Project object */;
 }

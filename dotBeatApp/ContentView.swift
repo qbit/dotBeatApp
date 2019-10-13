@@ -7,10 +7,24 @@
 //
 
 import SwiftUI
+import Beat
 
 struct ContentView: View {
+    @State var beat = Beat().text()
+        
     var body: some View {
-        Text("Hello World!")
+        VStack {
+            VStack() {
+                Text("It's currently:")
+                Text("@\(self.beat)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .onTapGesture {
+                        self.beat = Beat().text()
+                    }
+            }
+        }
     }
 }
 
